@@ -1,0 +1,28 @@
+[project]
+name = "clinai"
+version = "2.0.0"
+description = "Agentic healthcare virtual assistant powered by Groq and Chroma RAG"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "chromadb>=1.0.0",
+    "fastapi>=0.115.0",
+    "groq>=0.25.0",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.1.0",
+    "python-multipart>=0.0.20",
+    "requests>=2.32.0",
+    "uvicorn[standard]>=0.34.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "httpx>=0.28.0",
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools]
+py-modules = []
