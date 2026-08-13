@@ -1,0 +1,24 @@
+# .gitignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.env
+.env
+.env.*
+!.env.example
+*.log
+venv/
+.envrc
+.DS_Store
+node_modules/
+frontend/__pycache__/
+ClinAI/data/
+ClinAI/api/data/
+ClinAI/api/chroma_data/
+*.db
+*.db-shm
+*.db-wal
+*.egg-info/
+
